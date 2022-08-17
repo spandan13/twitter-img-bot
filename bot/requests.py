@@ -98,6 +98,6 @@ def request_to_whom(tweet):
     # requests to "@fri_end!" should be given to "@fri_end" not "@fri_end!"
     realWhom = ""
     for letter in whom:
-        if letter.isalpha() or letter == "_":
+        if letter.isalnum() or letter == "_":
             realWhom = realWhom+letter
     return realWhom
